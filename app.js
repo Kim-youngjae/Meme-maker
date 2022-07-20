@@ -14,9 +14,10 @@ const CANVAS_HEIGHT = 700;
 
 canvas.width = CANVAS_WIDTH;
 canvas.height = CANVAS_HEIGHT;
+
 ctx.lineWidth = lineWidth.value;
 let isPainting = false;
-let isFilling = false;
+let isFilling = false; //상황에 따라 update될 수 있도록 let으로 설정
 
 function onMove(event) {
   if (isPainting) {
