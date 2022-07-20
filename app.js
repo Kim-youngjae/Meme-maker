@@ -63,7 +63,7 @@ function onModeClick() {
 }
 
 function onCanvasClick() {
-  if(isFilling){
+  if (isFilling) {
     ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
   }
 }
@@ -71,6 +71,10 @@ function onCanvasClick() {
 function onDestroyClick() {
   ctx.fillStyle = "white";
   ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+}
+
+function onEraserClick() {
+  
 }
 
 canvas.addEventListener("mousemove", onMove);
